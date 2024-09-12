@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/js/vendor/index-BJbvSJGi.css">
-    <title>Гелиодент - главная1</title>
+    <title>Гелиодент | <?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
 
@@ -48,31 +48,26 @@
                 alt="img">
             <div class="container">
                 <div class="menu-window__wrapper">
-                    <div class="menu-window__block">
+                    <nav class="menu-window__block">
                         <h2>УСЛУГИ</h2>
-                        <ul class="menu-window__list menu-window__list--column">
-                            <li><a href="product-1.html">Лечение зубов</a></li>
-                            <li><a href="tooth-1-day.html">Зубы за день, за 8 часов</a></li>
-                            <li><a href="implantasia.html">Имплантация, протезирование и перепротезирование</a></li>
-                            <li><a href="implant-2.html">Имплантация
-                                    без костной пластики</a></li>
-                            <li><a href="/brekets.html">Брекеты и элайнеры</a></li>
-                            <li><a href="/vinir.html">Виниры</a></li>
-                            <li><a href="/narkos.html">Наркоз</a></li>
-                            <li><a href="/otbelivanie.html">Гигиена и отбеливание</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-window__block">
+                        <?php wp_nav_menu([
+                            'theme_location' => 'top-services',
+                            'container' => '',
+                            'menu_class' => 'menu-window__list menu-window__list--column',
+                            'menu_id' => ''
+                        ]);
+                        ?>
+                    </nav>
+                    <nav class="menu-window__block">
                         <h2>ПАЦИЕНТАМ</h2>
-                        <ul class="menu-window__list">
-                            <li><a href="about.html">О клинике</a></li>
-                            <li><a href="our-work.html">Наши работы</a></li>
-                            <li><a href="faq.html">Вопрос-ответ</a></li>
-                            <li><a href="for-clients.html">Пациентам</a></li>
-                            <li><a href="info.html">Информация</a></li>
-                            <li><a href="contact.html">Контакты</a></li>
-                        </ul>
-                    </div>
+                        <?php wp_nav_menu([
+                            'theme_location' => 'top-for-clients',
+                            'container' => '',
+                            'menu_class' => 'menu-window__list',
+                            'menu_id' => ''
+                        ]);
+                        ?>
+                    </nav>
                 </div>
                 <div class="menu-window__footer">
                     <ul>

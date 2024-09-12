@@ -39,10 +39,6 @@ function theme_add_scripts()
 
 function add_menu()
 {
-    // register_nav_menu('top', 'главное меню сайта');
-    // register_nav_menu('mobile-menu', 'мобильное меню');
-    // register_nav_menu('catalog-menu', 'каталог-меню');
-    // register_nav_menu('catalog-footer', 'каталог-футер');
-    // register_nav_menu('footer-menu', 'футер-меню');
-    // register_nav_menu('side-bar-menu', 'сайдбар меню');
+    register_nav_menu('top-services', 'Меню в модалке - Услуги');
+    register_nav_menu('top-for-clients', 'Меню в модалке - Клиентам');
 }

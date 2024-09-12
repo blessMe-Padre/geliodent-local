@@ -57,28 +57,23 @@
             <div class="footer__list-wrapper">
                 <div class="footer__list-item max-w-[185px] md:max-w-[292px]">
                     <h3 class="footer__list-title">УСЛУГИ</h3>
-                    <ul class="footer__list">
-                        <li><a href="#">Лечение зубов</a></li>
-                        <li><a href="#">Зубы за день, за 8 часов</a></li>
-                        <li><a href="#">Имплантация, протезирование
-                                и перепротезирование</a></li>
-                        <li><a href="#">Имплантация без костной пластики</a></li>
-                        <li><a href="#">Брекеты и элайнеры</a></li>
-                        <li><a href="#">Виниры</a></li>
-                        <li><a href="#">Наркоз</a></li>
-                        <li><a href="#">Гигиена и отбеливание</a></li>
-                    </ul>
+                    <?php wp_nav_menu([
+                        'theme_location' => 'top-services',
+                        'container' => '',
+                        'menu_class' => 'footer__list',
+                        'menu_id' => ''
+                    ]);
+                    ?>
                 </div>
                 <div class="footer__list-item">
                     <h3 class="footer__list-title">ПАЦИЕНТАМ</h3>
-                    <ul class="footer__list">
-                        <li><a href="#">О клинике</a></li>
-                        <li><a href="#">Наши работы</a></li>
-                        <li><a href="#">Вопрос-ответ</a></li>
-                        <li><a href="#">Пациентам</a></li>
-                        <li><a href="#">Информация</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
+                    <?php wp_nav_menu([
+                        'theme_location' => 'top-for-clients',
+                        'container' => '',
+                        'menu_class' => 'footer__list',
+                        'menu_id' => ''
+                    ]);
+                    ?>
                 </div>
                 <div class="footer__list-item footer__list-item--social">
                     <div class="mb-5">
